@@ -35,7 +35,7 @@ const detectBrowsers = {
   postDetection(availableBrowser) {
     // On CI just use Chrome
     if (ENV.CI === true) {
-      return [ChromeHeadless]
+      return ['ChromeHeadless']
     }
 
     if (availableBrowser.includes('Chrome')) {
